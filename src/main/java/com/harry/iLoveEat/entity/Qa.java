@@ -30,8 +30,8 @@ public class Qa implements Serializable {
      */
     private static final long serialVersionUID = -9164492474609370434L;
 
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "qa_seq")
-    @GenericGenerator(name = "qa_seq", strategy = "generators.StringPrefixedSequenceIdGenerator", parameters = { @Parameter(name = StringPrefixedSequenceIdGenerator.INCREMENT_PARAM, value = "50"),
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "new_qa_seq")
+    @GenericGenerator(name = "new_qa_seq", strategy = "generators.StringPrefixedSequenceIdGenerator", parameters = { @Parameter(name = StringPrefixedSequenceIdGenerator.INCREMENT_PARAM, value = "50"),
             @Parameter(name = StringPrefixedSequenceIdGenerator.VALUE_PREFIX_PARAMETER, value = "Q"), @Parameter(name = StringPrefixedSequenceIdGenerator.NUMBER_FORMAT_PARAMETER, value = "%09d") })
     @Id
     @Column(name = "QA_NO")

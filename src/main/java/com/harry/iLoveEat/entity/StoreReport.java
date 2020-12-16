@@ -30,8 +30,8 @@ public class StoreReport implements java.io.Serializable {
      */
     private static final long serialVersionUID = 8855367788856570589L;
 
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "store_report_seq")
-    @GenericGenerator(name = "store_report_seq", strategy = "generators.StringPrefixedSequenceIdGenerator", parameters = { @Parameter(name = StringPrefixedSequenceIdGenerator.INCREMENT_PARAM, value = "50"),
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "stor_report_seq")
+    @GenericGenerator(name = "stor_report_seq", strategy = "generators.StringPrefixedSequenceIdGenerator", parameters = { @Parameter(name = StringPrefixedSequenceIdGenerator.INCREMENT_PARAM, value = "50"),
             @Parameter(name = StringPrefixedSequenceIdGenerator.VALUE_PREFIX_PARAMETER, value = "SR"), @Parameter(name = StringPrefixedSequenceIdGenerator.NUMBER_FORMAT_PARAMETER, value = "%08d") })
     @Id
     @Column(name = "STORE_REPORT_NO")

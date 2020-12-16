@@ -49,7 +49,7 @@ public class Advertisement implements Serializable {
     @Column(name = "AD_STARTDATE")
     private Date ad_startdate;
 
-    @Column(name = "AD_NO")
+    @Column(name = "AD_ENDDATE")
     private Date AD_ENDDATE;
 
     @Column(name = "STORE_NO")

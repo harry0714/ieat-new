@@ -31,8 +31,8 @@ public class StorePhoto implements java.io.Serializable {
      */
     private static final long serialVersionUID = -77450970292859741L;
 
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "photo_seq")
-    @GenericGenerator(name = "photo_seq", strategy = "generators.StringPrefixedSequenceIdGenerator", parameters = { @Parameter(name = StringPrefixedSequenceIdGenerator.INCREMENT_PARAM, value = "50"),
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "stor_photo_seq")
+    @GenericGenerator(name = "stor_photo_seq", strategy = "generators.StringPrefixedSequenceIdGenerator", parameters = { @Parameter(name = StringPrefixedSequenceIdGenerator.INCREMENT_PARAM, value = "50"),
             @Parameter(name = StringPrefixedSequenceIdGenerator.VALUE_PREFIX_PARAMETER, value = "P"), @Parameter(name = StringPrefixedSequenceIdGenerator.NUMBER_FORMAT_PARAMETER, value = "%09d") })
     @Id
     @Column(name = "PHOTO_NO")
